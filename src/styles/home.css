@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+
+#profile-image {
+    flex: 0 0 500px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    #profile-image {
+        flex: 0 0 300px;
+    }
+}
+
+/* Fonts */
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
