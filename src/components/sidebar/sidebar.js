@@ -4,20 +4,22 @@ import { Link } from "gatsby";
 const Sidebar = () => {
     // Can later replace with 'children' later to generalize
     return (
-        <main>
+        <main className="pt-6 px-10 md:h-screen w-1/6">
             <div>Insert logo here.</div>
             <div>
-                <nav class="">
+                <nav className="">
                     <ul>
                         <li>
                             <Link to={`/about`}><span>Resume</span></Link>
                         </li>
-                        <li>Projects</li>
+                        <li>
+                            <Link to={`/`}><span>Projects</span></Link>
+                        </li>
                         <li>Art</li>
                         <li>Writing</li>
                     </ul>
                 </nav>
-                <nav class="">
+                <nav className="">
                     <ul>
                         <li>About</li>
                         <li>Contact</li>
