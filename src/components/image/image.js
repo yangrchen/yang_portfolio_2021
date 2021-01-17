@@ -6,7 +6,7 @@ const Image = ({data, className, id}) => {
         <div id={id} className={className}>
             <Img fluid={data.file.childImageSharp.fluid} fadeIn={true}></Img>
         </div>
-    )
+    );
 }
 
 export default Image;
