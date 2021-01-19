@@ -1,15 +1,15 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import Image from "../image/image"
+import FluidImage from "../../components/image/fluid-image" 
 import { useStaticQuery, graphql } from "gatsby";
 
 const Sidebar = () => {
     // Can later replace with 'children' later to generalize
     return (
-        <main className="pt-20 ml-16 lg:h-screen pt-serif lg:space-y-16 hidden lg:block">
-            <Image data={useStaticQuery(graphql`
+        <main className="pt-20 ml-16 lg:h-screen pt-serif lg:space-y-10 hidden lg:block w-64">
+            <FluidImage data={useStaticQuery(graphql`
     query IconQuery {
-  file(relativePath: {eq: "yang_signature_sm.png"}) {
+  file(relativePath: {eq: "yang_signature.png"}) {
     childImageSharp {
       fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid
@@ -18,8 +18,8 @@ const Sidebar = () => {
   }
 }`
             )}
-            ></Image>
-            <div>
+            ></FluidImage>
+            <div className="ml-4">
                 <nav>
                     <ul>
                         <li className="hover:underline">

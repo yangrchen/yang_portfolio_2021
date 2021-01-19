@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from '../components/layout/layout';
 import { Router } from "@reach/router";
 import AboutPage from "../pages/about"
-import Image from "../components/image/image"
+import FluidImage from "../components/image/fluid-image"
 import { useStaticQuery, graphql } from "gatsby";
 
 // CSS
@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <div id="wrapper" className="lg:flex lg:pt-16 break-words leading-relaxed lg:space-x-16 pt-serif">
-        <Image id="profile-image" className="mx-6 mt-6 lg:mt-0" data={useStaticQuery(graphql`
+        <FluidImage id="profile-image" className="mx-6 mt-6 lg:mt-0" data={useStaticQuery(graphql`
     query MyQuery {
   file(relativePath: {eq: "yang.jpg"}) {
     childImageSharp {
@@ -24,7 +24,7 @@ const IndexPage = () => {
   }
 }`
         )}
-        ></Image>
+        ></FluidImage>
         <div class="lg:w-1/4 self-center pt-8 mx-12 lg:mx-0 lg:pt-0 pb-6 lg:pb-0">
           <h1 className="text-2xl lg:text-2xl font-bold">Hiya, hiya, I'm Yang.</h1>
           <br></br>
