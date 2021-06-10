@@ -23,6 +23,6 @@ module.exports = {
         name: "images",
         path: path.join(__dirname, "src", "images"),
       }
-    }
+    },
   ],
 };
